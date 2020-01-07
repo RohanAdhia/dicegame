@@ -1,8 +1,14 @@
+document.querySelector(".roll-dice").addEventListener("click",function(){
+
+  var rollSound = new Audio("sounds/roll-sound.mp3");
+  rollSound.play();
+
+});
+
 function randomNumberGen() {
   var a = Math.random() * 6;
   return "images/dice" + (Math.floor(a) + 1) + ".png";
 }
-
 
 function diceProcess() {
 
